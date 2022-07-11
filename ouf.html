@@ -1,0 +1,49 @@
+<!--change image qui fonctionne  -->
+
+	<form id='accroche-modify' method="POST" action='Accueil.php' enctype="multipart/form-data">
+	<?php   if (isset($_SESSION["admin"]) && $_SESSION["admin"]==true)
+					{
+						echo "<img src='Images/modify.png' width=45px  class='bouton-invisible' onclick='modifier_image(this)'/>";
+						echo "<input type='file' name='image' class='bouton-invisible'/></br>";
+						echo "<input type='submit' value='Envoyer' class='bouton-invisible' style='clear : both;'/>";
+						$images=$_FILES['image'];
+						if(isset($images) AND $images['error']==0)
+						{
+							$chemin=pathinfo($images['name']);
+							$extension_upload=$chemin['extension'];
+							$extensions_autorisees= array('jpg','jpeg','gif','png');
+							if (in_array($extension_upload, $extensions_autorisees))
+							 {
+								$newPic='Images/accroche.'.$extension_upload;
+								move_uploaded_file($images['tmp_name'], $newPic);
+							 }
+							$requete ="UPDATE accroche SET image='".$newPic."'";
+							$changement=mysqli_query($BDD,$requete);
+							header('Refresh: URL=Accueil.php');
+					}
+				}
+	?>
+	</form>
+
+
+
+
+good version
+
+	<?php
+		$imageAccroche= 'SELECT image FROM accroche';
+		$result=mysqli_query($BDD,$imageAccroche);
+		$image=mysqli_fetch_assoc($result);
+		echo "<div id='accroche' style='background-image: url(\"".$image['image']."\")'";
+		if (isset($_SESSION["admin"]) && $_SESSION["admin"]==true) {echo "onmouseover='bouton(this)' onmouseout='bouton(this)'";} echo ">";
+	?>
+		<form id='accroche-modify'>
+		<?php   if (isset($_SESSION["admin"]) && $_SESSION["admin"]==true)
+						{
+							echo "<img src='Images/modify.png' width=45px  class='bouton-invisible' onclick='modifier_image(this)'/>";
+							echo "<input type='file' name='accroche' class='bouton-invisible'/></br>";
+							echo "<input type='button' value='Envoyer' class='bouton-invisible' style='clear : both;' onclick='changer_image(this)'/>";
+						}
+
+		?>
+		</form>
