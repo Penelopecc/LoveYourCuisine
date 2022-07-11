@@ -1,0 +1,66 @@
+
+
+/* Menu */
+
+header
+{
+  background-color: #f2f3e2;
+}
+
+
+hr
+{
+  border-color : #808000;
+}
+
+a
+{
+  text-decoration: none;
+  font-family: Pacifico,cursive;;
+  font-weight: bold;
+  color : #7a8f5a;
+}
+
+
+.menu
+{
+  padding-top: 20px;
+  padding-bottom: 0.5%;
+}
+
+
+
+.liens
+{
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  border-radius: 40px;
+}
+
+.connexion-insciption
+{
+  float: right;
+  margin-right: 0.5%;
+}
+
+.inscription
+{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.compte
+{
+  display: inline-block;
+}
+
+.lien-commande
+{
+  float: right;
+  clear: right;
+  margin-top: 0.5%;
+  margin-right: 1.5%;
+}
