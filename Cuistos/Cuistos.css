@@ -1,0 +1,536 @@
+body {
+    background-color : #FEFEE8;
+    font-family: 'Asap', sans-serif;
+    color: #2F2F2F;
+  }
+
+main
+{
+  padding-top: 90px;
+}
+
+  /* Menu */
+
+  header
+  {
+    background-color: #f2f3e2;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+
+  hr
+  {
+    box-shadow: 0px 4px 8px black;
+    border-color : #808000;
+  }
+
+  a
+  {
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    color : #7a8f5a;
+  }
+
+
+  .menu
+  {
+    padding-top: 20px;
+    padding-bottom: 0.5%;
+  }
+
+
+
+  .liens
+  {
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 0.5%;
+    margin-top: 0.5%;
+    border-radius: 40px;
+  }
+
+  .connexion-insciption
+  {
+    float: right;
+    margin-right: 0.5%;
+  }
+
+  #inscription
+  {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 40px;
+  }
+
+
+  #compte
+  {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    color : #7a8f5a;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+
+  .lien-commande
+  {
+    float: right;
+    clear: right;
+    margin-top: 0.5%;
+    margin-right: 1.5%;
+  }
+
+  #logo
+  {
+    float: left;
+    margin-top: -20px;
+  }
+
+/* Body */
+
+
+
+/* POP-UP Connexion */
+
+/* Full-width input fields */
+input[type=text].connexion, input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #f2f3e2;
+    color: #7a8f5a;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    /*text-align: center;*/
+    /*margin: 24px 0 12px 0;*/
+    position: relative;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close2 {
+    position: absolute;
+    /*right: 25px;*/
+    right: 5%;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+
+h1{
+  text-align:center;
+  font-family: 'Lora', serif;
+  color : #406B30;
+}
+
+h2{
+  font-family: 'Lora', serif;
+  color : #406B30;
+}
+
+.paragraphe{
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+}
+
+#flecheDroite{
+  float:right;
+}
+
+#flecheGauche{
+  float:left;
+  text-align:left;
+}
+
+.nom {
+  grid-column-start: 2;
+  grid-column-end: 5;}
+
+.fleches {
+  cursor: pointer;
+}
+
+.description {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  text-align: justify;}
+
+.descriptions {
+  display: none;
+}
+
+.specialites div {
+  margin-top: 2.5%;
+  margin-left: 15%;
+  margin-right:15%;
+}
+
+.titre_specialite {
+  margin-bottom: 2.5%;
+  font-weight: bold;
+  font-family: 'Lora', serif;
+  color : #406B30;
+}
+
+.specPhotos {
+  width: auto;}
+
+.vide3 {
+  grid-row-start: 3;
+  grid-row-end: 5;}
+
+.vide4 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 6;}
+
+
+.presentation {
+  display: grid;
+  grid-template-columns: 15% 17.5% 25% 22.5% 15%;
+  grid-column-gap: 1%;
+  grid-row-gap: 5%;
+  padding: 10px;
+}
+
+
+#lien_recettes{
+  margin-left: 20%;
+}
+
+
+.listeCuistos div {
+  /*display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-column-gap: 1%;
+  grid-row-gap: 5%;
+  padding-top: 2.5%;*/
+  align: inline-block;
+  margin-bottom: 5%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+
+
+#photoCuisto {
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px #555;
+}
+
+#photosCuistos{
+  /*grid-column-start: 2;
+  grid-column-end: 5;  */
+  width:auto;
+}
+
+#cuisto1 {
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #138D00;
+}
+
+.listePhoto{
+  border-style: none;
+  border-radius: 50%;
+  margin-right: 1%;
+  cursor: pointer;
+}
+
+
+.alignement {
+  /*display: inline-block;*/
+  background-color:white;
+  visibility: visible;
+  padding-bottom: 1%;
+}
+
+
+
+
+/* Boutons */
+
+#bouton
+{
+  margin-top: 4%;
+  text-align: center;
+}
+
+#bouton_recettes {
+  background-color: #f2f3e2;
+  color: #7a8f5a;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#regardez {
+  margin-top: 3%;
+  text-align: center;
+}
+
+/* Carte de géolocalisation */
+
+#map
+{
+  margin-top: 3%;
+  height:400px;
+  width : 50%;
+  margin-left: 25%;
+  z-index: 1;
+}
+
+#bouton-adresse
+{
+  margin-top: 5px;
+  text-align: center;
+}
+
+
+
+/* Bas de page */
+footer
+{
+  padding-left: 7%;
+}
+
+#fin-de-site
+{
+  margin-left: 50px;
+}
+
+
+#fin-de-site-logo
+{
+  text-align: center;
+}
+
+#fin-de-site div
+{
+  display:inline-block;
+  vertical-align: top;
+}
+
+
+#we-do
+{
+  margin-left: 50px;
+  width: auto;
+}
+
+
+#we-are
+{
+  margin-left: 40px;
+  margin-right: 40px;
+  width : auto;
+}
+
+#suivez-nous
+{
+  width: auto;
+}
+
+#besoin-aide
+{
+  margin-left: 40px;
+  width: auto;
+  text-align: center;
+}
+
+#mail
+{
+  color : black;
+  cursor: pointer;
+}
+
+#mail:hover
+{
+ color: #7a8f5a;
+}
+
+#liens-we-do
+{
+  padding: 0;
+}
+
+#liens-we-do
+{
+  padding: 0;
+}
+
+a.liens-we-do
+{
+  font-family: 'Lora', serif;
+}
+
+#liens-we-are
+{
+  padding: 0;
+}
+
+a.liens-we-are
+{
+  font-family: 'Lora', serif;
+}
+
+#liens-suivez-nous
+{
+  padding: 0;
+}
+
+#liens-besoin-aide
+{
+  padding: 0;
+  margin-left: 20px;
+}
+
+ul#liens-besoin-aide
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#liens-suivez-nous
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+li#fb
+{
+  background-image: url('../Images/fb.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left;
+}
+
+li#twitter
+{
+  background-image: url('../Images/twitter.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left;
+}
+
+li#google
+{
+  background-image: url('../Images/google.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left;
+}
+
+li#in
+{
+  background-image: url('../Images/in.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left;
+}
+
+
+.liens-sites
+{
+  margin-left: 25px;
+  font-family: 'Lora', serif;
+}
+
+.copyright
+{
+  margin-top: 2%;
+  text-align: center;
+}
