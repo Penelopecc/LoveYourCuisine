@@ -1,0 +1,921 @@
+/* Partie Admin */
+
+.bouton-invisible
+{
+  visibility: hidden;
+  display: none;
+}
+
+.bouton-visible
+{
+  float: right;
+  display: block;
+}
+
+/* Body */
+
+main
+{
+  padding-top: 90px;
+}
+
+/* Menu */
+
+header
+{
+  background-color: #f2f3e2;
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+
+hr
+{
+  box-shadow: 0px 4px 8px black;
+  border-color : #808000;
+}
+
+a
+{
+  text-decoration: none;
+  font-family: 'Lobster', cursive;
+  font-size: 18px;
+  font-weight: bold;
+  color : #7a8f5a;
+}
+
+
+.menu
+{
+  padding-top: 20px;
+  padding-bottom: 0.5%;
+}
+
+
+
+.liens
+{
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  border-radius: 40px;
+}
+
+.connexion-insciption
+{
+  float: right;
+  margin-right: 0.5%;
+  margin-top: -5px;
+}
+
+#inscription
+{
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 40px;
+}
+
+
+#compte
+{
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  color : #7a8f5a;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.lien-commande
+{
+  float: right;
+  clear: right;
+  margin-top: 0.5%;
+  margin-right: 1.5%;
+  border-radius: 40px;
+}
+
+#logo
+{
+  float: left;
+  margin-top: -20px;
+}
+
+/* POP-UP Connexion */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #f2f3e2;
+    color: #7a8f5a;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    /*text-align: center;*/
+    /*margin: 24px 0 12px 0;*/
+    position: relative;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close2 {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+/* Accroche */
+
+
+#accroche
+{
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
+}
+
+#accroche-zone-titre
+{
+  display: block;
+  color : black;
+  width : 25%;
+  margin-left: 37%;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 240,0.5);
+  border-radius: 10px 20px;
+  font-family: 'Lora', serif;
+}
+
+#accroche-logo
+{
+  width:18%;
+  margin-bottom: 1%;
+  opacity: 0.9;
+}
+
+
+/* Partie explication */
+
+.explication
+{
+  display: block;
+  text-align: center;
+  background-color: #f2f3e2;
+  border-style: solid;
+  border-width:1.5px ;
+  border-color: #556b2f;
+  padding-bottom: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 #808080;
+}
+
+.explication-titre
+{
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+  font-size: 20px;
+}
+
+#explication-texte
+{
+  display: inline-block;
+  margin-top: 1%;
+  font-family: 'Asap', sans-serif;
+}
+
+/* Caractéristiques */
+
+.caracteristiques
+{
+  text-align: center;
+  margin-top: 2%;
+  padding-bottom: 1%;
+}
+
+#caracteristiques-titre
+{
+  margin-bottom: 2%;
+  display: inline-block;
+}
+
+#caracteristiques-titre-zone-texte
+{
+  font-family: 'Lobster', cursive;;
+  font-size: 25px;
+  margin-bottom: 1%;
+}
+
+
+
+.caracteristiques-block
+{
+
+    box-shadow: 0 4px 8px 0 #808080;
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: #f5f5dc;
+    width : 200px;
+    margin-left: 2%;
+    display: inline-block;
+    margin-top: 1%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.caracteristiques-block:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.caracteristiques-container {
+    padding: 2px 16px;
+}
+
+img.caracteristiques-image {
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+}
+
+
+
+
+#image1
+{
+  width: 50px;
+}
+
+#image2
+{
+  width: 50px;
+}
+
+#image3
+{
+  width: 50px;
+}
+
+.close
+{
+  color: #556b2f;
+  font-size: 10px;
+  width: 9px;
+}
+
+.content-block
+{
+  display: inline-block;
+  text-align: center;
+  margin-right: 3%;
+  margin-left: 20px;
+}
+
+
+#decouvre
+{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color:#7a8f5a;
+  color: #7a8f5a;
+  border-radius: 5px;
+  font-family: 'Lora', serif;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+#decouvre:hover
+{
+    background-color: #f2f3e2;
+    color:#7a8f5a;
+}
+
+#centrer
+{
+  text-align: center;
+}
+
+/* Partie "faire à manger" */
+
+.faire-manger
+{
+  margin-top: 8%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.faire-manger-titre
+{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 1%;
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+}
+
+.faire-manger-soustitre
+{
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1%;
+  font-family: 'Asap', sans-serif;
+}
+
+
+#faire-manger-blocks
+{
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.faire-manger-block
+{
+  display: inline-block;
+  text-align: center;
+  margin-right: 1.5%;
+}
+
+
+.image
+{
+  border-radius: 5px;
+  display: inline-block;
+  width:200px;
+}
+
+.image:hover
+{
+  opacity: 0.7;
+}
+
+
+#choisir
+{
+  margin-top: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color:#7a8f5a;
+  color: #7a8f5a;
+  border-radius: 5px;
+  font-family: 'Lora', serif;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+#choisir:hover
+{
+    background-color: #f2f3e2;
+    color:#7a8f5a;
+}
+
+
+
+
+
+/* Partie "partager ses repas" */
+
+
+#partager-ses-repas
+{
+  text-align: center;
+  margin-top : 7%;
+  background-color: #f2f3e2;
+  border-radius: 20px;
+  padding-bottom: 2%;
+}
+
+#partager-ses-repas-titre
+{
+  display: inline-block;
+  font-family: 'Lobster', cursive;;
+  font-size: 25px;
+}
+
+
+#partager-ses-repas-soustitre
+{
+  margin-top: 1%;
+  display: inline-block;
+  margin-bottom: 2%;
+  font-family: 'Asap', sans-serif;
+}
+
+.block-partager-ses-repas
+{
+  display: inline-block;
+  margin:1%;
+  margin-bottom: 2%;
+}
+
+#partager
+{
+  margin-top: 4%;
+}
+
+
+/* Partie "commander un plat" */
+
+#commander-plat
+{
+  text-align: center;
+  margin-top: 7%;
+}
+
+#commander-plat-titre
+{
+  text-align: center;
+  font-size: 25px;
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+}
+
+#commander-plat-soustitre
+{
+  text-align: center;
+  display: inline-block;
+  font-family: 'Asap', sans-serif;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.block-commander-plat
+{
+  display: inline-block;
+  margin:1%;
+  margin-bottom: 2%;
+}
+
+.commander-plat-image
+{
+    border-radius: 50px;
+    display: inline-block;
+    width:200px;
+}
+
+.commander-plat-image:hover
+{
+  opacity: 0.7;
+}
+
+
+
+/* Témoignages */
+
+#temoignage
+{
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 8%;
+  background-color: #f2f3e2;
+  border-radius: 20px;
+  padding-bottom: 2%;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+
+#temoignage-titre
+{
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.bulle
+{
+  margin : 10px;
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+}
+
+#temoignage-bouton
+{
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color:#7a8f5a;
+  color: #7a8f5a;
+  border-radius: 5px;
+  font-family: 'Lora', serif;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+#temoignage-bouton:hover
+{
+    background-color: #f2f3e2;
+    color:#7a8f5a;
+}
+
+
+/* Partenaires */
+
+#partenaires
+{
+  margin-top: 8%;
+}
+
+#partenaires-titre
+{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+
+
+#partenaires-slider {
+	position: relative;
+	width: 600px;
+	height: 250px;
+	padding: 15px;
+	margin: 0 auto 2em;
+	border: 1px solid #ddd;
+	background: #FFF;
+	/* CSS3 effects */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+  margin-bottom: 5%;
+}
+
+#partenaires-slider:before,
+#partenaires-slider:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+#partenaires-slider:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+#partenaires-slider:after {
+	right:0;
+	transform: rotate(4deg);
+}
+
+/* gestion des dimensions et débordement du conteneur */
+#partenaires-slider .partenaires-container
+{
+	position:relative;
+	width: 600px;
+	height: 250px;
+	overflow: hidden;
+}
+
+/* on prévoit un petit espace gris pour la timeline */
+#partenaires-slider .partenaires-container:after
+{
+	position:absolute;
+	bottom: 0; left:0;
+	content: " ";
+	width: 100%;
+	height: 1px;
+	background: #999;
+}
+/*
+   le conteneur des slides
+   en largeur il fait 100% x le nombre de slides
+*/
+#partenaires-slider .slider
+{
+	position: absolute;
+	left:0; top:0;
+	width: 400%;
+	height: 250px;
+}
+
+figure
+{
+  width : 600px;
+  height: 250px;
+}
+
+/* annulation des marges sur figure */
+#partenaires-slider figure
+{
+	position:relative;
+	display:inline-block;
+	padding:0; margin:0;
+}
+/* petit effet de vignette sur les images */
+#partenaires-slider figure:after
+{
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+
+/* fonction d'animation */
+
+@keyframes slider
+{
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+/* complétez le sélecteur avec la propriété animation */
+#partenaires-slider .slider
+{
+	animation: slider 20s infinite;
+}
+
+
+#timeline
+{
+	position: absolute;
+	background: #999;
+	bottom: 15px;
+	left: 15px;
+	height: 1.5px;
+	background: #7a8f5a;
+	width: 0;
+	/* fonction d'animation */
+	animation: timeliner 20s infinite;
+}
+
+@keyframes timeliner
+{
+	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
+	20%, 45%, 70%, 90%		{ width: 600px;	}
+}
+
+
+
+
+
+
+/* Bas de page */
+footer
+{
+  padding-left: 1%;
+  text-align: justify;
+}
+
+#fin-de-site
+{
+  margin-left: 50px;
+}
+
+
+#fin-de-site-logo
+{
+  text-align: center;
+}
+
+#fin-de-site div
+{
+  display:inline-block;
+  vertical-align: top;
+}
+
+
+#we-do
+{
+  margin-left: 50px;
+  width: auto;
+}
+
+
+#we-are
+{
+  margin-left: 40px;
+  margin-right: 40px;
+  width : auto;
+}
+
+#suivez-nous
+{
+  width: auto;
+}
+
+#besoin-aide
+{
+  margin-left: 40px;
+  width: auto;
+  text-align: center;
+}
+
+#mail
+{
+  color : black;
+  cursor: pointer;
+}
+
+#mail:hover
+{
+ color: #7a8f5a;
+}
+
+#liens-we-do
+{
+  padding: 0;
+}
+
+#liens-we-do
+{
+  padding: 0;
+}
+
+a.liens-we-do
+{
+  font-family: 'Lora', serif;
+}
+
+#liens-we-are
+{
+  padding: 0;
+}
+
+a.liens-we-are
+{
+  font-family: 'Lora', serif;
+}
+
+#liens-suivez-nous
+{
+  padding: 0;
+}
+
+#liens-besoin-aide
+{
+  padding: 0;
+  margin-left: 20px;
+}
+
+ul#liens-besoin-aide
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#liens-suivez-nous
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+li#fb
+{
+  background-image: url('../Images/fb.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left;
+}
+
+li#twitter
+{
+  background-image: url('../Images/twitter.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left;
+}
+
+li#google
+{
+  background-image: url('../Images/google.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left;
+}
+
+li#in
+{
+  background-image: url('../Images/in.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left;
+}
+
+
+.liens-sites
+{
+  margin-left: 25px;
+  font-family: 'Lora', serif;
+}
+
+.copyright
+{
+  margin-top: 2%;
+  text-align: center;
+}
